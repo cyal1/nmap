@@ -1,0 +1,8 @@
+error.o: error.c error.h ../include/nsock_config.h \
+  /Users/cyan/Downloads/nmap-7.91/nbase/nbase_config.h
+gh_heap.o: gh_heap.c ../include/nsock_config.h \
+  /Users/cyan/Downloads/nmap-7.91/nbase/nbase_config.h \
+  /Users/cyan/Downloads/nmap-7.91/nbase/nbase.h \
+  /Users/cyan/Downloads/nmap-7.91/nbase/getopt.h \
+  /Users/cyan/Downloads/nmap-7.91/nbase/nbase_ipv6.h gh_heap.h error.h
+engine_epoll.o: engine_epoll.c ../include/nsock_config.h

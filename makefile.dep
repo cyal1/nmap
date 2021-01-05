@@ -1,0 +1,690 @@
+charpool.o: charpool.cc nbase/nbase.h nbase/nbase_config.h nbase/getopt.h \
+  nbase/nbase_ipv6.h charpool.h nmap_error.h nmap_config.h
+FingerPrintResults.o: FingerPrintResults.cc FingerPrintResults.h \
+  FPEngine.h nsock/include/nsock.h nsock/include/nsock_config.h \
+  libnetutil/npacket.h libnetutil/ApplicationLayerElement.h \
+  libnetutil/PacketElement.h nbase/nbase.h nbase/nbase_config.h \
+  nbase/getopt.h nbase/nbase_ipv6.h libnetutil/netutil.h \
+  libdnet-stripped/include/dnet.h libdnet-stripped/include/dnet/os.h \
+  libdnet-stripped/include/dnet/eth.h libdnet-stripped/include/dnet/ip.h \
+  libdnet-stripped/include/dnet/ip6.h \
+  libdnet-stripped/include/dnet/addr.h \
+  libdnet-stripped/include/dnet/arp.h \
+  libdnet-stripped/include/dnet/icmp.h \
+  libdnet-stripped/include/dnet/icmpv6.h \
+  libdnet-stripped/include/dnet/tcp.h \
+  libdnet-stripped/include/dnet/udp.h \
+  libdnet-stripped/include/dnet/sctp.h \
+  libdnet-stripped/include/dnet/intf.h \
+  libdnet-stripped/include/dnet/route.h \
+  libdnet-stripped/include/dnet/fw.h libdnet-stripped/include/dnet/tun.h \
+  libdnet-stripped/include/dnet/blob.h \
+  libdnet-stripped/include/dnet/rand.h libnetutil/ARPHeader.h \
+  libnetutil/NetworkLayerElement.h libnetutil/DataLinkLayerElement.h \
+  libnetutil/EthernetHeader.h libnetutil/ICMPHeader.h \
+  libnetutil/ICMPv4Header.h libnetutil/ICMPv6Header.h \
+  libnetutil/ICMPv6Option.h libnetutil/ICMPv6RRBody.h \
+  libnetutil/IPv4Header.h libnetutil/IPv6Header.h libnetutil/RawData.h \
+  libnetutil/TCPHeader.h libnetutil/TransportLayerElement.h \
+  libnetutil/UDPHeader.h libnetutil/HopByHopHeader.h \
+  libnetutil/IPv6ExtensionHeader.h libnetutil/DestOptsHeader.h \
+  libnetutil/FragmentHeader.h libnetutil/RoutingHeader.h \
+  libnetutil/PacketParser.h osscan.h NmapOps.h nmap.h nmap_config.h \
+  scan_lists.h output.h nse_main.h nse_lua.h liblua/lua.h \
+  liblua/luaconf.h liblua/lauxlib.h liblua/lualib.h
+FPEngine.o: FPEngine.cc FPEngine.h nsock/include/nsock.h \
+  nsock/include/nsock_config.h libnetutil/npacket.h \
+  libnetutil/ApplicationLayerElement.h libnetutil/PacketElement.h \
+  nbase/nbase.h nbase/nbase_config.h nbase/getopt.h nbase/nbase_ipv6.h \
+  libnetutil/netutil.h libdnet-stripped/include/dnet.h \
+  libdnet-stripped/include/dnet/os.h libdnet-stripped/include/dnet/eth.h \
+  libdnet-stripped/include/dnet/ip.h libdnet-stripped/include/dnet/ip6.h \
+  libdnet-stripped/include/dnet/addr.h \
+  libdnet-stripped/include/dnet/arp.h \
+  libdnet-stripped/include/dnet/icmp.h \
+  libdnet-stripped/include/dnet/icmpv6.h \
+  libdnet-stripped/include/dnet/tcp.h \
+  libdnet-stripped/include/dnet/udp.h \
+  libdnet-stripped/include/dnet/sctp.h \
+  libdnet-stripped/include/dnet/intf.h \
+  libdnet-stripped/include/dnet/route.h \
+  libdnet-stripped/include/dnet/fw.h libdnet-stripped/include/dnet/tun.h \
+  libdnet-stripped/include/dnet/blob.h \
+  libdnet-stripped/include/dnet/rand.h libnetutil/ARPHeader.h \
+  libnetutil/NetworkLayerElement.h libnetutil/DataLinkLayerElement.h \
+  libnetutil/EthernetHeader.h libnetutil/ICMPHeader.h \
+  libnetutil/ICMPv4Header.h libnetutil/ICMPv6Header.h \
+  libnetutil/ICMPv6Option.h libnetutil/ICMPv6RRBody.h \
+  libnetutil/IPv4Header.h libnetutil/IPv6Header.h libnetutil/RawData.h \
+  libnetutil/TCPHeader.h libnetutil/TransportLayerElement.h \
+  libnetutil/UDPHeader.h libnetutil/HopByHopHeader.h \
+  libnetutil/IPv6ExtensionHeader.h libnetutil/DestOptsHeader.h \
+  libnetutil/FragmentHeader.h libnetutil/RoutingHeader.h \
+  libnetutil/PacketParser.h Target.h nse_main.h nse_lua.h nmap_config.h \
+  liblua/lua.h liblua/luaconf.h liblua/lauxlib.h liblua/lualib.h \
+  scan_lists.h portreasons.h portlist.h probespec.h osscan.h osscan2.h \
+  timing.h FingerPrintResults.h NmapOps.h nmap.h output.h nmap_error.h \
+  liblinear/linear.h FPModel.h tcpip.h string_pool.h
+FPModel.o: FPModel.cc FingerPrintResults.h FPEngine.h \
+  nsock/include/nsock.h nsock/include/nsock_config.h \
+  libnetutil/npacket.h libnetutil/ApplicationLayerElement.h \
+  libnetutil/PacketElement.h nbase/nbase.h nbase/nbase_config.h \
+  nbase/getopt.h nbase/nbase_ipv6.h libnetutil/netutil.h \
+  libdnet-stripped/include/dnet.h libdnet-stripped/include/dnet/os.h \
+  libdnet-stripped/include/dnet/eth.h libdnet-stripped/include/dnet/ip.h \
+  libdnet-stripped/include/dnet/ip6.h \
+  libdnet-stripped/include/dnet/addr.h \
+  libdnet-stripped/include/dnet/arp.h \
+  libdnet-stripped/include/dnet/icmp.h \
+  libdnet-stripped/include/dnet/icmpv6.h \
+  libdnet-stripped/include/dnet/tcp.h \
+  libdnet-stripped/include/dnet/udp.h \
+  libdnet-stripped/include/dnet/sctp.h \
+  libdnet-stripped/include/dnet/intf.h \
+  libdnet-stripped/include/dnet/route.h \
+  libdnet-stripped/include/dnet/fw.h libdnet-stripped/include/dnet/tun.h \
+  libdnet-stripped/include/dnet/blob.h \
+  libdnet-stripped/include/dnet/rand.h libnetutil/ARPHeader.h \
+  libnetutil/NetworkLayerElement.h libnetutil/DataLinkLayerElement.h \
+  libnetutil/EthernetHeader.h libnetutil/ICMPHeader.h \
+  libnetutil/ICMPv4Header.h libnetutil/ICMPv6Header.h \
+  libnetutil/ICMPv6Option.h libnetutil/ICMPv6RRBody.h \
+  libnetutil/IPv4Header.h libnetutil/IPv6Header.h libnetutil/RawData.h \
+  libnetutil/TCPHeader.h libnetutil/TransportLayerElement.h \
+  libnetutil/UDPHeader.h libnetutil/HopByHopHeader.h \
+  libnetutil/IPv6ExtensionHeader.h libnetutil/DestOptsHeader.h \
+  libnetutil/FragmentHeader.h libnetutil/RoutingHeader.h \
+  libnetutil/PacketParser.h osscan.h liblinear/linear.h
+idle_scan.o: idle_scan.cc libnetutil/npacket.h \
+  libnetutil/ApplicationLayerElement.h libnetutil/PacketElement.h \
+  nbase/nbase.h nbase/nbase_config.h nbase/getopt.h nbase/nbase_ipv6.h \
+  libnetutil/netutil.h libdnet-stripped/include/dnet.h \
+  libdnet-stripped/include/dnet/os.h libdnet-stripped/include/dnet/eth.h \
+  libdnet-stripped/include/dnet/ip.h libdnet-stripped/include/dnet/ip6.h \
+  libdnet-stripped/include/dnet/addr.h \
+  libdnet-stripped/include/dnet/arp.h \
+  libdnet-stripped/include/dnet/icmp.h \
+  libdnet-stripped/include/dnet/icmpv6.h \
+  libdnet-stripped/include/dnet/tcp.h \
+  libdnet-stripped/include/dnet/udp.h \
+  libdnet-stripped/include/dnet/sctp.h \
+  libdnet-stripped/include/dnet/intf.h \
+  libdnet-stripped/include/dnet/route.h \
+  libdnet-stripped/include/dnet/fw.h libdnet-stripped/include/dnet/tun.h \
+  libdnet-stripped/include/dnet/blob.h \
+  libdnet-stripped/include/dnet/rand.h libnetutil/ARPHeader.h \
+  libnetutil/NetworkLayerElement.h libnetutil/DataLinkLayerElement.h \
+  libnetutil/EthernetHeader.h libnetutil/ICMPHeader.h \
+  libnetutil/ICMPv4Header.h libnetutil/ICMPv6Header.h \
+  libnetutil/ICMPv6Option.h libnetutil/ICMPv6RRBody.h \
+  libnetutil/IPv4Header.h libnetutil/IPv6Header.h libnetutil/RawData.h \
+  libnetutil/TCPHeader.h libnetutil/TransportLayerElement.h \
+  libnetutil/UDPHeader.h libnetutil/HopByHopHeader.h \
+  libnetutil/IPv6ExtensionHeader.h libnetutil/DestOptsHeader.h \
+  libnetutil/FragmentHeader.h libnetutil/RoutingHeader.h \
+  libnetutil/PacketParser.h idle_scan.h timing.h osscan2.h nmap.h \
+  nmap_config.h scan_lists.h NmapOps.h output.h nse_main.h nse_lua.h \
+  liblua/lua.h liblua/luaconf.h liblua/lauxlib.h liblua/lualib.h \
+  nsock/include/nsock.h nsock/include/nsock_config.h Target.h \
+  portreasons.h portlist.h probespec.h osscan.h nmap_error.h tcpip.h \
+  struct_ip.h
+MACLookup.o: MACLookup.cc nmap.h nmap_config.h MACLookup.h nbase/nbase.h \
+  nbase/nbase_config.h nbase/getopt.h nbase/nbase_ipv6.h NmapOps.h \
+  scan_lists.h output.h nse_main.h nse_lua.h liblua/lua.h \
+  liblua/luaconf.h liblua/lauxlib.h liblua/lualib.h \
+  nsock/include/nsock.h nsock/include/nsock_config.h nmap_error.h \
+  charpool.h
+main.o: main.cc nmap.h nmap_config.h NmapOps.h scan_lists.h output.h \
+  nbase/nbase.h nbase/nbase_config.h nbase/getopt.h nbase/nbase_ipv6.h \
+  nse_main.h nse_lua.h liblua/lua.h liblua/luaconf.h liblua/lauxlib.h \
+  liblua/lualib.h nsock/include/nsock.h nsock/include/nsock_config.h \
+  utils.h nmap_error.h
+nmap_dns.o: nmap_dns.cc nmap.h nmap_config.h NmapOps.h scan_lists.h \
+  output.h nbase/nbase.h nbase/nbase_config.h nbase/getopt.h \
+  nbase/nbase_ipv6.h nse_main.h nse_lua.h liblua/lua.h liblua/luaconf.h \
+  liblua/lauxlib.h liblua/lualib.h nsock/include/nsock.h \
+  nsock/include/nsock_config.h nmap_dns.h nmap_error.h nmap_tty.h \
+  tcpip.h timing.h Target.h libnetutil/netutil.h \
+  libdnet-stripped/include/dnet.h libdnet-stripped/include/dnet/os.h \
+  libdnet-stripped/include/dnet/eth.h libdnet-stripped/include/dnet/ip.h \
+  libdnet-stripped/include/dnet/ip6.h \
+  libdnet-stripped/include/dnet/addr.h \
+  libdnet-stripped/include/dnet/arp.h \
+  libdnet-stripped/include/dnet/icmp.h \
+  libdnet-stripped/include/dnet/icmpv6.h \
+  libdnet-stripped/include/dnet/tcp.h \
+  libdnet-stripped/include/dnet/udp.h \
+  libdnet-stripped/include/dnet/sctp.h \
+  libdnet-stripped/include/dnet/intf.h \
+  libdnet-stripped/include/dnet/route.h \
+  libdnet-stripped/include/dnet/fw.h libdnet-stripped/include/dnet/tun.h \
+  libdnet-stripped/include/dnet/blob.h \
+  libdnet-stripped/include/dnet/rand.h portreasons.h portlist.h \
+  probespec.h osscan.h osscan2.h
+nmap_error.o: nmap_error.cc nmap_error.h nmap_config.h nbase/nbase.h \
+  nbase/nbase_config.h nbase/getopt.h nbase/nbase_ipv6.h output.h \
+  scan_lists.h nse_main.h nse_lua.h liblua/lua.h liblua/luaconf.h \
+  liblua/lauxlib.h liblua/lualib.h NmapOps.h nmap.h \
+  nsock/include/nsock.h nsock/include/nsock_config.h xml.h
+nmap_ftp.o: nmap_ftp.cc nmap.h nmap_config.h nmap_ftp.h scan_lists.h \
+  nbase/nbase.h nbase/nbase_config.h nbase/getopt.h nbase/nbase_ipv6.h \
+  output.h nse_main.h nse_lua.h liblua/lua.h liblua/luaconf.h \
+  liblua/lauxlib.h liblua/lualib.h NmapOps.h nsock/include/nsock.h \
+  nsock/include/nsock_config.h nmap_error.h tcpip.h Target.h \
+  libnetutil/netutil.h libdnet-stripped/include/dnet.h \
+  libdnet-stripped/include/dnet/os.h libdnet-stripped/include/dnet/eth.h \
+  libdnet-stripped/include/dnet/ip.h libdnet-stripped/include/dnet/ip6.h \
+  libdnet-stripped/include/dnet/addr.h \
+  libdnet-stripped/include/dnet/arp.h \
+  libdnet-stripped/include/dnet/icmp.h \
+  libdnet-stripped/include/dnet/icmpv6.h \
+  libdnet-stripped/include/dnet/tcp.h \
+  libdnet-stripped/include/dnet/udp.h \
+  libdnet-stripped/include/dnet/sctp.h \
+  libdnet-stripped/include/dnet/intf.h \
+  libdnet-stripped/include/dnet/route.h \
+  libdnet-stripped/include/dnet/fw.h libdnet-stripped/include/dnet/tun.h \
+  libdnet-stripped/include/dnet/blob.h \
+  libdnet-stripped/include/dnet/rand.h portreasons.h portlist.h \
+  probespec.h osscan.h osscan2.h timing.h nmap_tty.h
+NmapOps.o: NmapOps.cc nmap.h nmap_config.h nbase/nbase.h \
+  nbase/nbase_config.h nbase/getopt.h nbase/nbase_ipv6.h NmapOps.h \
+  scan_lists.h output.h nse_main.h nse_lua.h liblua/lua.h \
+  liblua/luaconf.h liblua/lauxlib.h liblua/lualib.h \
+  nsock/include/nsock.h nsock/include/nsock_config.h osscan.h \
+  nmap_error.h
+NmapOutputTable.o: NmapOutputTable.cc NmapOutputTable.h nbase/nbase.h \
+  nbase/nbase_config.h nbase/getopt.h nbase/nbase_ipv6.h nmap_error.h \
+  nmap_config.h
+nmap_tty.o: nmap_tty.cc nmap_config.h nmap.h nmap_tty.h NmapOps.h \
+  scan_lists.h output.h nbase/nbase.h nbase/nbase_config.h \
+  nbase/getopt.h nbase/nbase_ipv6.h nse_main.h nse_lua.h liblua/lua.h \
+  liblua/luaconf.h liblua/lauxlib.h liblua/lualib.h \
+  nsock/include/nsock.h nsock/include/nsock_config.h
+osscan2.o: osscan2.cc osscan.h nbase/nbase.h nbase/nbase_config.h \
+  nbase/getopt.h nbase/nbase_ipv6.h osscan2.h \
+  libdnet-stripped/include/dnet.h libdnet-stripped/include/dnet/os.h \
+  libdnet-stripped/include/dnet/eth.h libdnet-stripped/include/dnet/ip.h \
+  libdnet-stripped/include/dnet/ip6.h \
+  libdnet-stripped/include/dnet/addr.h \
+  libdnet-stripped/include/dnet/arp.h \
+  libdnet-stripped/include/dnet/icmp.h \
+  libdnet-stripped/include/dnet/icmpv6.h \
+  libdnet-stripped/include/dnet/tcp.h \
+  libdnet-stripped/include/dnet/udp.h \
+  libdnet-stripped/include/dnet/sctp.h \
+  libdnet-stripped/include/dnet/intf.h \
+  libdnet-stripped/include/dnet/route.h \
+  libdnet-stripped/include/dnet/fw.h libdnet-stripped/include/dnet/tun.h \
+  libdnet-stripped/include/dnet/blob.h \
+  libdnet-stripped/include/dnet/rand.h timing.h NmapOps.h nmap.h \
+  nmap_config.h scan_lists.h output.h nse_main.h nse_lua.h liblua/lua.h \
+  liblua/luaconf.h liblua/lauxlib.h liblua/lualib.h \
+  nsock/include/nsock.h nsock/include/nsock_config.h tcpip.h Target.h \
+  libnetutil/netutil.h portreasons.h portlist.h probespec.h utils.h \
+  nmap_error.h FPEngine.h libnetutil/npacket.h \
+  libnetutil/ApplicationLayerElement.h libnetutil/PacketElement.h \
+  libnetutil/ARPHeader.h libnetutil/NetworkLayerElement.h \
+  libnetutil/DataLinkLayerElement.h libnetutil/EthernetHeader.h \
+  libnetutil/ICMPHeader.h libnetutil/ICMPv4Header.h \
+  libnetutil/ICMPv6Header.h libnetutil/ICMPv6Option.h \
+  libnetutil/ICMPv6RRBody.h libnetutil/IPv4Header.h \
+  libnetutil/IPv6Header.h libnetutil/RawData.h libnetutil/TCPHeader.h \
+  libnetutil/TransportLayerElement.h libnetutil/UDPHeader.h \
+  libnetutil/HopByHopHeader.h libnetutil/IPv6ExtensionHeader.h \
+  libnetutil/DestOptsHeader.h libnetutil/FragmentHeader.h \
+  libnetutil/RoutingHeader.h libnetutil/PacketParser.h \
+  FingerPrintResults.h struct_ip.h string_pool.h
+osscan.o: osscan.cc osscan.h nbase/nbase.h nbase/nbase_config.h \
+  nbase/getopt.h nbase/nbase_ipv6.h NmapOps.h nmap.h nmap_config.h \
+  scan_lists.h output.h nse_main.h nse_lua.h liblua/lua.h \
+  liblua/luaconf.h liblua/lauxlib.h liblua/lualib.h \
+  nsock/include/nsock.h nsock/include/nsock_config.h charpool.h \
+  FingerPrintResults.h FPEngine.h libnetutil/npacket.h \
+  libnetutil/ApplicationLayerElement.h libnetutil/PacketElement.h \
+  libnetutil/netutil.h libdnet-stripped/include/dnet.h \
+  libdnet-stripped/include/dnet/os.h libdnet-stripped/include/dnet/eth.h \
+  libdnet-stripped/include/dnet/ip.h libdnet-stripped/include/dnet/ip6.h \
+  libdnet-stripped/include/dnet/addr.h \
+  libdnet-stripped/include/dnet/arp.h \
+  libdnet-stripped/include/dnet/icmp.h \
+  libdnet-stripped/include/dnet/icmpv6.h \
+  libdnet-stripped/include/dnet/tcp.h \
+  libdnet-stripped/include/dnet/udp.h \
+  libdnet-stripped/include/dnet/sctp.h \
+  libdnet-stripped/include/dnet/intf.h \
+  libdnet-stripped/include/dnet/route.h \
+  libdnet-stripped/include/dnet/fw.h libdnet-stripped/include/dnet/tun.h \
+  libdnet-stripped/include/dnet/blob.h \
+  libdnet-stripped/include/dnet/rand.h libnetutil/ARPHeader.h \
+  libnetutil/NetworkLayerElement.h libnetutil/DataLinkLayerElement.h \
+  libnetutil/EthernetHeader.h libnetutil/ICMPHeader.h \
+  libnetutil/ICMPv4Header.h libnetutil/ICMPv6Header.h \
+  libnetutil/ICMPv6Option.h libnetutil/ICMPv6RRBody.h \
+  libnetutil/IPv4Header.h libnetutil/IPv6Header.h libnetutil/RawData.h \
+  libnetutil/TCPHeader.h libnetutil/TransportLayerElement.h \
+  libnetutil/UDPHeader.h libnetutil/HopByHopHeader.h \
+  libnetutil/IPv6ExtensionHeader.h libnetutil/DestOptsHeader.h \
+  libnetutil/FragmentHeader.h libnetutil/RoutingHeader.h \
+  libnetutil/PacketParser.h nmap_error.h string_pool.h
+output.o: output.cc nmap.h nmap_config.h output.h nbase/nbase.h \
+  nbase/nbase_config.h nbase/getopt.h nbase/nbase_ipv6.h scan_lists.h \
+  nse_main.h nse_lua.h liblua/lua.h liblua/luaconf.h liblua/lauxlib.h \
+  liblua/lualib.h osscan.h osscan2.h libdnet-stripped/include/dnet.h \
+  libdnet-stripped/include/dnet/os.h libdnet-stripped/include/dnet/eth.h \
+  libdnet-stripped/include/dnet/ip.h libdnet-stripped/include/dnet/ip6.h \
+  libdnet-stripped/include/dnet/addr.h \
+  libdnet-stripped/include/dnet/arp.h \
+  libdnet-stripped/include/dnet/icmp.h \
+  libdnet-stripped/include/dnet/icmpv6.h \
+  libdnet-stripped/include/dnet/tcp.h \
+  libdnet-stripped/include/dnet/udp.h \
+  libdnet-stripped/include/dnet/sctp.h \
+  libdnet-stripped/include/dnet/intf.h \
+  libdnet-stripped/include/dnet/route.h \
+  libdnet-stripped/include/dnet/fw.h libdnet-stripped/include/dnet/tun.h \
+  libdnet-stripped/include/dnet/blob.h \
+  libdnet-stripped/include/dnet/rand.h timing.h NmapOps.h \
+  nsock/include/nsock.h nsock/include/nsock_config.h NmapOutputTable.h \
+  MACLookup.h portreasons.h protocols.h FingerPrintResults.h FPEngine.h \
+  libnetutil/npacket.h libnetutil/ApplicationLayerElement.h \
+  libnetutil/PacketElement.h libnetutil/netutil.h libnetutil/ARPHeader.h \
+  libnetutil/NetworkLayerElement.h libnetutil/DataLinkLayerElement.h \
+  libnetutil/EthernetHeader.h libnetutil/ICMPHeader.h \
+  libnetutil/ICMPv4Header.h libnetutil/ICMPv6Header.h \
+  libnetutil/ICMPv6Option.h libnetutil/ICMPv6RRBody.h \
+  libnetutil/IPv4Header.h libnetutil/IPv6Header.h libnetutil/RawData.h \
+  libnetutil/TCPHeader.h libnetutil/TransportLayerElement.h \
+  libnetutil/UDPHeader.h libnetutil/HopByHopHeader.h \
+  libnetutil/IPv6ExtensionHeader.h libnetutil/DestOptsHeader.h \
+  libnetutil/FragmentHeader.h libnetutil/RoutingHeader.h \
+  libnetutil/PacketParser.h tcpip.h Target.h portlist.h probespec.h \
+  nmap_error.h utils.h xml.h
+payload.o: payload.cc nmap.h nmap_config.h NmapOps.h scan_lists.h \
+  output.h nbase/nbase.h nbase/nbase_config.h nbase/getopt.h \
+  nbase/nbase_ipv6.h nse_main.h nse_lua.h liblua/lua.h liblua/luaconf.h \
+  liblua/lauxlib.h liblua/lualib.h nsock/include/nsock.h \
+  nsock/include/nsock_config.h payload.h utils.h nmap_error.h
+portlist.o: portlist.cc nmap.h nmap_config.h portlist.h nbase/nbase.h \
+  nbase/nbase_config.h nbase/getopt.h nbase/nbase_ipv6.h nse_main.h \
+  nse_lua.h liblua/lua.h liblua/luaconf.h liblua/lauxlib.h \
+  liblua/lualib.h scan_lists.h portreasons.h nmap_error.h NmapOps.h \
+  output.h nsock/include/nsock.h nsock/include/nsock_config.h services.h \
+  protocols.h tcpip.h libnetutil/netutil.h \
+  libdnet-stripped/include/dnet.h libdnet-stripped/include/dnet/os.h \
+  libdnet-stripped/include/dnet/eth.h libdnet-stripped/include/dnet/ip.h \
+  libdnet-stripped/include/dnet/ip6.h \
+  libdnet-stripped/include/dnet/addr.h \
+  libdnet-stripped/include/dnet/arp.h \
+  libdnet-stripped/include/dnet/icmp.h \
+  libdnet-stripped/include/dnet/icmpv6.h \
+  libdnet-stripped/include/dnet/tcp.h \
+  libdnet-stripped/include/dnet/udp.h \
+  libdnet-stripped/include/dnet/sctp.h \
+  libdnet-stripped/include/dnet/intf.h \
+  libdnet-stripped/include/dnet/route.h \
+  libdnet-stripped/include/dnet/fw.h libdnet-stripped/include/dnet/tun.h \
+  libdnet-stripped/include/dnet/blob.h \
+  libdnet-stripped/include/dnet/rand.h
+portreasons.o: portreasons.cc portlist.h nbase/nbase.h \
+  nbase/nbase_config.h nbase/getopt.h nbase/nbase_ipv6.h nse_main.h \
+  nse_lua.h nmap_config.h liblua/lua.h liblua/luaconf.h liblua/lauxlib.h \
+  liblua/lualib.h scan_lists.h portreasons.h output.h NmapOps.h nmap.h \
+  nsock/include/nsock.h nsock/include/nsock_config.h Target.h \
+  libnetutil/netutil.h libdnet-stripped/include/dnet.h \
+  libdnet-stripped/include/dnet/os.h libdnet-stripped/include/dnet/eth.h \
+  libdnet-stripped/include/dnet/ip.h libdnet-stripped/include/dnet/ip6.h \
+  libdnet-stripped/include/dnet/addr.h \
+  libdnet-stripped/include/dnet/arp.h \
+  libdnet-stripped/include/dnet/icmp.h \
+  libdnet-stripped/include/dnet/icmpv6.h \
+  libdnet-stripped/include/dnet/tcp.h \
+  libdnet-stripped/include/dnet/udp.h \
+  libdnet-stripped/include/dnet/sctp.h \
+  libdnet-stripped/include/dnet/intf.h \
+  libdnet-stripped/include/dnet/route.h \
+  libdnet-stripped/include/dnet/fw.h libdnet-stripped/include/dnet/tun.h \
+  libdnet-stripped/include/dnet/blob.h \
+  libdnet-stripped/include/dnet/rand.h probespec.h osscan.h osscan2.h \
+  timing.h xml.h
+protocols.o: protocols.cc protocols.h nbase/nbase.h nbase/nbase_config.h \
+  nbase/getopt.h nbase/nbase_ipv6.h NmapOps.h nmap.h nmap_config.h \
+  scan_lists.h output.h nse_main.h nse_lua.h liblua/lua.h \
+  liblua/luaconf.h liblua/lauxlib.h liblua/lualib.h \
+  nsock/include/nsock.h nsock/include/nsock_config.h charpool.h \
+  nmap_error.h utils.h
+scan_engine.o: scan_engine.cc portreasons.h nbase/nbase.h \
+  nbase/nbase_config.h nbase/getopt.h nbase/nbase_ipv6.h \
+  libdnet-stripped/include/dnet.h libdnet-stripped/include/dnet/os.h \
+  libdnet-stripped/include/dnet/eth.h libdnet-stripped/include/dnet/ip.h \
+  libdnet-stripped/include/dnet/ip6.h \
+  libdnet-stripped/include/dnet/addr.h \
+  libdnet-stripped/include/dnet/arp.h \
+  libdnet-stripped/include/dnet/icmp.h \
+  libdnet-stripped/include/dnet/icmpv6.h \
+  libdnet-stripped/include/dnet/tcp.h \
+  libdnet-stripped/include/dnet/udp.h \
+  libdnet-stripped/include/dnet/sctp.h \
+  libdnet-stripped/include/dnet/intf.h \
+  libdnet-stripped/include/dnet/route.h \
+  libdnet-stripped/include/dnet/fw.h libdnet-stripped/include/dnet/tun.h \
+  libdnet-stripped/include/dnet/blob.h \
+  libdnet-stripped/include/dnet/rand.h scan_engine.h scan_lists.h \
+  probespec.h timing.h scan_engine_connect.h scan_engine_raw.h tcpip.h \
+  NmapOps.h nmap.h nmap_config.h output.h nse_main.h nse_lua.h \
+  liblua/lua.h liblua/luaconf.h liblua/lauxlib.h liblua/lualib.h \
+  nsock/include/nsock.h nsock/include/nsock_config.h nmap_tty.h \
+  payload.h Target.h libnetutil/netutil.h portlist.h osscan.h osscan2.h \
+  targets.h TargetGroup.h utils.h nmap_error.h struct_ip.h
+scan_engine_connect.o: scan_engine_connect.cc nmap_error.h nmap_config.h \
+  nbase/nbase.h nbase/nbase_config.h nbase/getopt.h nbase/nbase_ipv6.h \
+  tcpip.h Target.h libnetutil/netutil.h libdnet-stripped/include/dnet.h \
+  libdnet-stripped/include/dnet/os.h libdnet-stripped/include/dnet/eth.h \
+  libdnet-stripped/include/dnet/ip.h libdnet-stripped/include/dnet/ip6.h \
+  libdnet-stripped/include/dnet/addr.h \
+  libdnet-stripped/include/dnet/arp.h \
+  libdnet-stripped/include/dnet/icmp.h \
+  libdnet-stripped/include/dnet/icmpv6.h \
+  libdnet-stripped/include/dnet/tcp.h \
+  libdnet-stripped/include/dnet/udp.h \
+  libdnet-stripped/include/dnet/sctp.h \
+  libdnet-stripped/include/dnet/intf.h \
+  libdnet-stripped/include/dnet/route.h \
+  libdnet-stripped/include/dnet/fw.h libdnet-stripped/include/dnet/tun.h \
+  libdnet-stripped/include/dnet/blob.h \
+  libdnet-stripped/include/dnet/rand.h nse_main.h nse_lua.h liblua/lua.h \
+  liblua/luaconf.h liblua/lauxlib.h liblua/lualib.h scan_lists.h \
+  portreasons.h portlist.h probespec.h osscan.h osscan2.h timing.h \
+  scan_engine.h scan_engine_connect.h NmapOps.h nmap.h output.h \
+  nsock/include/nsock.h nsock/include/nsock_config.h
+scan_engine_raw.o: scan_engine_raw.cc nmap_error.h nmap_config.h \
+  nbase/nbase.h nbase/nbase_config.h nbase/getopt.h nbase/nbase_ipv6.h \
+  NmapOps.h nmap.h scan_lists.h output.h nse_main.h nse_lua.h \
+  liblua/lua.h liblua/luaconf.h liblua/lauxlib.h liblua/lualib.h \
+  nsock/include/nsock.h nsock/include/nsock_config.h Target.h \
+  libnetutil/netutil.h libdnet-stripped/include/dnet.h \
+  libdnet-stripped/include/dnet/os.h libdnet-stripped/include/dnet/eth.h \
+  libdnet-stripped/include/dnet/ip.h libdnet-stripped/include/dnet/ip6.h \
+  libdnet-stripped/include/dnet/addr.h \
+  libdnet-stripped/include/dnet/arp.h \
+  libdnet-stripped/include/dnet/icmp.h \
+  libdnet-stripped/include/dnet/icmpv6.h \
+  libdnet-stripped/include/dnet/tcp.h \
+  libdnet-stripped/include/dnet/udp.h \
+  libdnet-stripped/include/dnet/sctp.h \
+  libdnet-stripped/include/dnet/intf.h \
+  libdnet-stripped/include/dnet/route.h \
+  libdnet-stripped/include/dnet/fw.h libdnet-stripped/include/dnet/tun.h \
+  libdnet-stripped/include/dnet/blob.h \
+  libdnet-stripped/include/dnet/rand.h portreasons.h portlist.h \
+  probespec.h osscan.h osscan2.h timing.h payload.h scan_engine.h \
+  scan_engine_raw.h struct_ip.h tcpip.h utils.h
+scan_lists.o: scan_lists.cc scan_lists.h nmap_error.h nmap_config.h \
+  nbase/nbase.h nbase/nbase_config.h nbase/getopt.h nbase/nbase_ipv6.h \
+  NmapOps.h nmap.h output.h nse_main.h nse_lua.h liblua/lua.h \
+  liblua/luaconf.h liblua/lauxlib.h liblua/lualib.h \
+  nsock/include/nsock.h nsock/include/nsock_config.h protocols.h \
+  services.h
+services.o: services.cc scan_lists.h services.h nbase/nbase.h \
+  nbase/nbase_config.h nbase/getopt.h nbase/nbase_ipv6.h NmapOps.h \
+  nmap.h nmap_config.h output.h nse_main.h nse_lua.h liblua/lua.h \
+  liblua/luaconf.h liblua/lauxlib.h liblua/lualib.h \
+  nsock/include/nsock.h nsock/include/nsock_config.h charpool.h \
+  nmap_error.h utils.h
+string_pool.o: string_pool.cc string_pool.h nbase/nbase.h \
+  nbase/nbase_config.h nbase/getopt.h nbase/nbase_ipv6.h
+Target.o: Target.cc Target.h nbase/nbase.h nbase/nbase_config.h \
+  nbase/getopt.h nbase/nbase_ipv6.h libnetutil/netutil.h \
+  libdnet-stripped/include/dnet.h libdnet-stripped/include/dnet/os.h \
+  libdnet-stripped/include/dnet/eth.h libdnet-stripped/include/dnet/ip.h \
+  libdnet-stripped/include/dnet/ip6.h \
+  libdnet-stripped/include/dnet/addr.h \
+  libdnet-stripped/include/dnet/arp.h \
+  libdnet-stripped/include/dnet/icmp.h \
+  libdnet-stripped/include/dnet/icmpv6.h \
+  libdnet-stripped/include/dnet/tcp.h \
+  libdnet-stripped/include/dnet/udp.h \
+  libdnet-stripped/include/dnet/sctp.h \
+  libdnet-stripped/include/dnet/intf.h \
+  libdnet-stripped/include/dnet/route.h \
+  libdnet-stripped/include/dnet/fw.h libdnet-stripped/include/dnet/tun.h \
+  libdnet-stripped/include/dnet/blob.h \
+  libdnet-stripped/include/dnet/rand.h nse_main.h nse_lua.h \
+  nmap_config.h liblua/lua.h liblua/luaconf.h liblua/lauxlib.h \
+  liblua/lualib.h scan_lists.h portreasons.h portlist.h probespec.h \
+  osscan.h osscan2.h timing.h FingerPrintResults.h FPEngine.h \
+  nsock/include/nsock.h nsock/include/nsock_config.h \
+  libnetutil/npacket.h libnetutil/ApplicationLayerElement.h \
+  libnetutil/PacketElement.h libnetutil/ARPHeader.h \
+  libnetutil/NetworkLayerElement.h libnetutil/DataLinkLayerElement.h \
+  libnetutil/EthernetHeader.h libnetutil/ICMPHeader.h \
+  libnetutil/ICMPv4Header.h libnetutil/ICMPv6Header.h \
+  libnetutil/ICMPv6Option.h libnetutil/ICMPv6RRBody.h \
+  libnetutil/IPv4Header.h libnetutil/IPv6Header.h libnetutil/RawData.h \
+  libnetutil/TCPHeader.h libnetutil/TransportLayerElement.h \
+  libnetutil/UDPHeader.h libnetutil/HopByHopHeader.h \
+  libnetutil/IPv6ExtensionHeader.h libnetutil/DestOptsHeader.h \
+  libnetutil/FragmentHeader.h libnetutil/RoutingHeader.h \
+  libnetutil/PacketParser.h NmapOps.h nmap.h output.h nmap_error.h
+NewTargets.o: NewTargets.cc NewTargets.h NmapOps.h nmap.h nmap_config.h \
+  scan_lists.h output.h nbase/nbase.h nbase/nbase_config.h \
+  nbase/getopt.h nbase/nbase_ipv6.h nse_main.h nse_lua.h liblua/lua.h \
+  liblua/luaconf.h liblua/lauxlib.h liblua/lualib.h \
+  nsock/include/nsock.h nsock/include/nsock_config.h nmap_error.h
+TargetGroup.o: TargetGroup.cc tcpip.h nbase/nbase.h nbase/nbase_config.h \
+  nbase/getopt.h nbase/nbase_ipv6.h TargetGroup.h NmapOps.h nmap.h \
+  nmap_config.h scan_lists.h output.h nse_main.h nse_lua.h liblua/lua.h \
+  liblua/luaconf.h liblua/lauxlib.h liblua/lualib.h \
+  nsock/include/nsock.h nsock/include/nsock_config.h nmap_error.h \
+  libnetutil/netutil.h libdnet-stripped/include/dnet.h \
+  libdnet-stripped/include/dnet/os.h libdnet-stripped/include/dnet/eth.h \
+  libdnet-stripped/include/dnet/ip.h libdnet-stripped/include/dnet/ip6.h \
+  libdnet-stripped/include/dnet/addr.h \
+  libdnet-stripped/include/dnet/arp.h \
+  libdnet-stripped/include/dnet/icmp.h \
+  libdnet-stripped/include/dnet/icmpv6.h \
+  libdnet-stripped/include/dnet/tcp.h \
+  libdnet-stripped/include/dnet/udp.h \
+  libdnet-stripped/include/dnet/sctp.h \
+  libdnet-stripped/include/dnet/intf.h \
+  libdnet-stripped/include/dnet/route.h \
+  libdnet-stripped/include/dnet/fw.h libdnet-stripped/include/dnet/tun.h \
+  libdnet-stripped/include/dnet/blob.h \
+  libdnet-stripped/include/dnet/rand.h
+targets.o: targets.cc nbase/nbase.h nbase/nbase_config.h nbase/getopt.h \
+  nbase/nbase_ipv6.h targets.h TargetGroup.h timing.h tcpip.h NmapOps.h \
+  nmap.h nmap_config.h scan_lists.h output.h nse_main.h nse_lua.h \
+  liblua/lua.h liblua/luaconf.h liblua/lauxlib.h liblua/lualib.h \
+  nsock/include/nsock.h nsock/include/nsock_config.h NewTargets.h \
+  Target.h libnetutil/netutil.h libdnet-stripped/include/dnet.h \
+  libdnet-stripped/include/dnet/os.h libdnet-stripped/include/dnet/eth.h \
+  libdnet-stripped/include/dnet/ip.h libdnet-stripped/include/dnet/ip6.h \
+  libdnet-stripped/include/dnet/addr.h \
+  libdnet-stripped/include/dnet/arp.h \
+  libdnet-stripped/include/dnet/icmp.h \
+  libdnet-stripped/include/dnet/icmpv6.h \
+  libdnet-stripped/include/dnet/tcp.h \
+  libdnet-stripped/include/dnet/udp.h \
+  libdnet-stripped/include/dnet/sctp.h \
+  libdnet-stripped/include/dnet/intf.h \
+  libdnet-stripped/include/dnet/route.h \
+  libdnet-stripped/include/dnet/fw.h libdnet-stripped/include/dnet/tun.h \
+  libdnet-stripped/include/dnet/blob.h \
+  libdnet-stripped/include/dnet/rand.h portreasons.h portlist.h \
+  probespec.h osscan.h osscan2.h scan_engine.h nmap_dns.h utils.h \
+  nmap_error.h xml.h
+tcpip.o: tcpip.cc nmap.h nmap_config.h nbase/nbase.h nbase/nbase_config.h \
+  nbase/getopt.h nbase/nbase_ipv6.h libdnet-stripped/include/dnet.h \
+  libdnet-stripped/include/dnet/os.h libdnet-stripped/include/dnet/eth.h \
+  libdnet-stripped/include/dnet/ip.h libdnet-stripped/include/dnet/ip6.h \
+  libdnet-stripped/include/dnet/addr.h \
+  libdnet-stripped/include/dnet/arp.h \
+  libdnet-stripped/include/dnet/icmp.h \
+  libdnet-stripped/include/dnet/icmpv6.h \
+  libdnet-stripped/include/dnet/tcp.h \
+  libdnet-stripped/include/dnet/udp.h \
+  libdnet-stripped/include/dnet/sctp.h \
+  libdnet-stripped/include/dnet/intf.h \
+  libdnet-stripped/include/dnet/route.h \
+  libdnet-stripped/include/dnet/fw.h libdnet-stripped/include/dnet/tun.h \
+  libdnet-stripped/include/dnet/blob.h \
+  libdnet-stripped/include/dnet/rand.h tcpip.h NmapOps.h scan_lists.h \
+  output.h nse_main.h nse_lua.h liblua/lua.h liblua/luaconf.h \
+  liblua/lauxlib.h liblua/lualib.h nsock/include/nsock.h \
+  nsock/include/nsock_config.h Target.h libnetutil/netutil.h \
+  portreasons.h portlist.h probespec.h osscan.h osscan2.h timing.h \
+  utils.h nmap_error.h struct_ip.h
+timing.o: timing.cc timing.h nbase/nbase.h nbase/nbase_config.h \
+  nbase/getopt.h nbase/nbase_ipv6.h NmapOps.h nmap.h nmap_config.h \
+  scan_lists.h output.h nse_main.h nse_lua.h liblua/lua.h \
+  liblua/luaconf.h liblua/lauxlib.h liblua/lualib.h \
+  nsock/include/nsock.h nsock/include/nsock_config.h utils.h \
+  nmap_error.h xml.h
+traceroute.o: traceroute.cc nmap_dns.h nbase/nbase.h nbase/nbase_config.h \
+  nbase/getopt.h nbase/nbase_ipv6.h nmap_error.h nmap_config.h \
+  nmap_tty.h osscan2.h libdnet-stripped/include/dnet.h \
+  libdnet-stripped/include/dnet/os.h libdnet-stripped/include/dnet/eth.h \
+  libdnet-stripped/include/dnet/ip.h libdnet-stripped/include/dnet/ip6.h \
+  libdnet-stripped/include/dnet/addr.h \
+  libdnet-stripped/include/dnet/arp.h \
+  libdnet-stripped/include/dnet/icmp.h \
+  libdnet-stripped/include/dnet/icmpv6.h \
+  libdnet-stripped/include/dnet/tcp.h \
+  libdnet-stripped/include/dnet/udp.h \
+  libdnet-stripped/include/dnet/sctp.h \
+  libdnet-stripped/include/dnet/intf.h \
+  libdnet-stripped/include/dnet/route.h \
+  libdnet-stripped/include/dnet/fw.h libdnet-stripped/include/dnet/tun.h \
+  libdnet-stripped/include/dnet/blob.h \
+  libdnet-stripped/include/dnet/rand.h timing.h payload.h NmapOps.h \
+  nmap.h scan_lists.h output.h nse_main.h nse_lua.h liblua/lua.h \
+  liblua/luaconf.h liblua/lauxlib.h liblua/lualib.h \
+  nsock/include/nsock.h nsock/include/nsock_config.h Target.h \
+  libnetutil/netutil.h portreasons.h portlist.h probespec.h osscan.h \
+  tcpip.h struct_ip.h
+utils.o: utils.cc nmap.h nmap_config.h utils.h nbase/nbase.h \
+  nbase/nbase_config.h nbase/getopt.h nbase/nbase_ipv6.h nmap_error.h \
+  NmapOps.h scan_lists.h output.h nse_main.h nse_lua.h liblua/lua.h \
+  liblua/luaconf.h liblua/lauxlib.h liblua/lualib.h \
+  nsock/include/nsock.h nsock/include/nsock_config.h
+xml.o: xml.cc output.h nbase/nbase.h nbase/nbase_config.h nbase/getopt.h \
+  nbase/nbase_ipv6.h scan_lists.h nse_main.h nse_lua.h nmap_config.h \
+  liblua/lua.h liblua/luaconf.h liblua/lauxlib.h liblua/lualib.h xml.h
+nse_main.o: nse_main.cc nmap.h nmap_config.h nbase/nbase.h \
+  nbase/nbase_config.h nbase/getopt.h nbase/nbase_ipv6.h nmap_error.h \
+  portlist.h nse_main.h nse_lua.h liblua/lua.h liblua/luaconf.h \
+  liblua/lauxlib.h liblua/lualib.h scan_lists.h portreasons.h \
+  nsock/include/nsock.h nsock/include/nsock_config.h NmapOps.h output.h \
+  timing.h Target.h libnetutil/netutil.h libdnet-stripped/include/dnet.h \
+  libdnet-stripped/include/dnet/os.h libdnet-stripped/include/dnet/eth.h \
+  libdnet-stripped/include/dnet/ip.h libdnet-stripped/include/dnet/ip6.h \
+  libdnet-stripped/include/dnet/addr.h \
+  libdnet-stripped/include/dnet/arp.h \
+  libdnet-stripped/include/dnet/icmp.h \
+  libdnet-stripped/include/dnet/icmpv6.h \
+  libdnet-stripped/include/dnet/tcp.h \
+  libdnet-stripped/include/dnet/udp.h \
+  libdnet-stripped/include/dnet/sctp.h \
+  libdnet-stripped/include/dnet/intf.h \
+  libdnet-stripped/include/dnet/route.h \
+  libdnet-stripped/include/dnet/fw.h libdnet-stripped/include/dnet/tun.h \
+  libdnet-stripped/include/dnet/blob.h \
+  libdnet-stripped/include/dnet/rand.h probespec.h osscan.h osscan2.h \
+  nmap_tty.h xml.h nse_utility.h nse_fs.h nse_nsock.h nse_nmaplib.h \
+  nse_pcrelib.h nse_openssl.h nse_debug.h nse_lpeg.h nse_libssh2.h \
+  nse_zlib.h
+nse_utility.o: nse_utility.cc Target.h nbase/nbase.h nbase/nbase_config.h \
+  nbase/getopt.h nbase/nbase_ipv6.h libnetutil/netutil.h \
+  libdnet-stripped/include/dnet.h libdnet-stripped/include/dnet/os.h \
+  libdnet-stripped/include/dnet/eth.h libdnet-stripped/include/dnet/ip.h \
+  libdnet-stripped/include/dnet/ip6.h \
+  libdnet-stripped/include/dnet/addr.h \
+  libdnet-stripped/include/dnet/arp.h \
+  libdnet-stripped/include/dnet/icmp.h \
+  libdnet-stripped/include/dnet/icmpv6.h \
+  libdnet-stripped/include/dnet/tcp.h \
+  libdnet-stripped/include/dnet/udp.h \
+  libdnet-stripped/include/dnet/sctp.h \
+  libdnet-stripped/include/dnet/intf.h \
+  libdnet-stripped/include/dnet/route.h \
+  libdnet-stripped/include/dnet/fw.h libdnet-stripped/include/dnet/tun.h \
+  libdnet-stripped/include/dnet/blob.h \
+  libdnet-stripped/include/dnet/rand.h nse_main.h nse_lua.h \
+  nmap_config.h liblua/lua.h liblua/luaconf.h liblua/lauxlib.h \
+  liblua/lualib.h scan_lists.h portreasons.h portlist.h probespec.h \
+  osscan.h osscan2.h timing.h nse_utility.h
+nse_dnet.o: nse_dnet.cc nsock/include/nsock.h \
+  nsock/include/nsock_config.h nmap_error.h nmap_config.h nbase/nbase.h \
+  nbase/nbase_config.h nbase/getopt.h nbase/nbase_ipv6.h NmapOps.h \
+  nmap.h scan_lists.h output.h nse_main.h nse_lua.h liblua/lua.h \
+  liblua/luaconf.h liblua/lauxlib.h liblua/lualib.h tcpip.h \
+  libnetutil/netutil.h libdnet-stripped/include/dnet.h \
+  libdnet-stripped/include/dnet/os.h libdnet-stripped/include/dnet/eth.h \
+  libdnet-stripped/include/dnet/ip.h libdnet-stripped/include/dnet/ip6.h \
+  libdnet-stripped/include/dnet/addr.h \
+  libdnet-stripped/include/dnet/arp.h \
+  libdnet-stripped/include/dnet/icmp.h \
+  libdnet-stripped/include/dnet/icmpv6.h \
+  libdnet-stripped/include/dnet/tcp.h \
+  libdnet-stripped/include/dnet/udp.h \
+  libdnet-stripped/include/dnet/sctp.h \
+  libdnet-stripped/include/dnet/intf.h \
+  libdnet-stripped/include/dnet/route.h \
+  libdnet-stripped/include/dnet/fw.h libdnet-stripped/include/dnet/tun.h \
+  libdnet-stripped/include/dnet/blob.h \
+  libdnet-stripped/include/dnet/rand.h nse_utility.h struct_ip.h
+nse_fs.o: nse_fs.cc nse_lua.h nmap_config.h liblua/lua.h liblua/luaconf.h \
+  liblua/lauxlib.h liblua/lualib.h nmap.h nse_fs.h nse_utility.h \
+  nmap_error.h nbase/nbase.h nbase/nbase_config.h nbase/getopt.h \
+  nbase/nbase_ipv6.h NmapOps.h scan_lists.h output.h nse_main.h \
+  nsock/include/nsock.h nsock/include/nsock_config.h
+nse_nmaplib.o: nse_nmaplib.cc nse_lua.h nmap_config.h liblua/lua.h \
+  liblua/luaconf.h liblua/lauxlib.h liblua/lualib.h nmap.h nmap_error.h \
+  nbase/nbase.h nbase/nbase_config.h nbase/getopt.h nbase/nbase_ipv6.h \
+  NmapOps.h scan_lists.h output.h nse_main.h nsock/include/nsock.h \
+  nsock/include/nsock_config.h FingerPrintResults.h FPEngine.h \
+  libnetutil/npacket.h libnetutil/ApplicationLayerElement.h \
+  libnetutil/PacketElement.h libnetutil/netutil.h \
+  libdnet-stripped/include/dnet.h libdnet-stripped/include/dnet/os.h \
+  libdnet-stripped/include/dnet/eth.h libdnet-stripped/include/dnet/ip.h \
+  libdnet-stripped/include/dnet/ip6.h \
+  libdnet-stripped/include/dnet/addr.h \
+  libdnet-stripped/include/dnet/arp.h \
+  libdnet-stripped/include/dnet/icmp.h \
+  libdnet-stripped/include/dnet/icmpv6.h \
+  libdnet-stripped/include/dnet/tcp.h \
+  libdnet-stripped/include/dnet/udp.h \
+  libdnet-stripped/include/dnet/sctp.h \
+  libdnet-stripped/include/dnet/intf.h \
+  libdnet-stripped/include/dnet/route.h \
+  libdnet-stripped/include/dnet/fw.h libdnet-stripped/include/dnet/tun.h \
+  libdnet-stripped/include/dnet/blob.h \
+  libdnet-stripped/include/dnet/rand.h libnetutil/ARPHeader.h \
+  libnetutil/NetworkLayerElement.h libnetutil/DataLinkLayerElement.h \
+  libnetutil/EthernetHeader.h libnetutil/ICMPHeader.h \
+  libnetutil/ICMPv4Header.h libnetutil/ICMPv6Header.h \
+  libnetutil/ICMPv6Option.h libnetutil/ICMPv6RRBody.h \
+  libnetutil/IPv4Header.h libnetutil/IPv6Header.h libnetutil/RawData.h \
+  libnetutil/TCPHeader.h libnetutil/TransportLayerElement.h \
+  libnetutil/UDPHeader.h libnetutil/HopByHopHeader.h \
+  libnetutil/IPv6ExtensionHeader.h libnetutil/DestOptsHeader.h \
+  libnetutil/FragmentHeader.h libnetutil/RoutingHeader.h \
+  libnetutil/PacketParser.h osscan.h Target.h portreasons.h portlist.h \
+  probespec.h osscan2.h timing.h NewTargets.h tcpip.h service_scan.h \
+  /usr/local/include/pcre.h nmap_dns.h protocols.h nse_nmaplib.h \
+  nse_utility.h nse_nsock.h nse_dnet.h
+nse_debug.o: nse_debug.cc nse_lua.h nmap_config.h liblua/lua.h \
+  liblua/luaconf.h liblua/lauxlib.h liblua/lualib.h nse_debug.h output.h \
+  nbase/nbase.h nbase/nbase_config.h nbase/getopt.h nbase/nbase_ipv6.h \
+  scan_lists.h nse_main.h
+nse_pcrelib.o: nse_pcrelib.cc nse_lua.h nmap_config.h liblua/lua.h \
+  liblua/luaconf.h liblua/lauxlib.h liblua/lualib.h nbase/nbase.h \
+  nbase/nbase_config.h nbase/getopt.h nbase/nbase_ipv6.h \
+  /usr/local/include/pcre.h nse_pcrelib.h
+nse_lpeg.o: nse_lpeg.cc nse_lua.h nmap_config.h liblua/lua.h \
+  liblua/luaconf.h liblua/lauxlib.h liblua/lualib.h lpeg.c
+nse_libssh2.o: nse_libssh2.cc /usr/local/include/libssh2.h nse_lua.h \
+  nmap_config.h liblua/lua.h liblua/luaconf.h liblua/lauxlib.h \
+  liblua/lualib.h nse_nsock.h nse_utility.h
+nse_zlib.o: nse_zlib.cc nse_lua.h nmap_config.h liblua/lua.h \
+  liblua/luaconf.h liblua/lauxlib.h liblua/lualib.h

@@ -1,0 +1,722 @@
+ncat_main.o: ncat_main.c ../nsock/include/nsock.h \
+  ../nsock/include/nsock_config.h ncat.h ncat_config.h config.h \
+  ../nbase/nbase.h ../nbase/nbase_config.h ../nbase/getopt.h \
+  ../nbase/nbase_ipv6.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl.h \
+  /usr/local/opt/openssl@1.1//include/openssl/e_os2.h \
+  /usr/local/opt/openssl@1.1//include/openssl/opensslconf.h \
+  /usr/local/opt/openssl@1.1//include/openssl/opensslv.h \
+  /usr/local/opt/openssl@1.1//include/openssl/comp.h \
+  /usr/local/opt/openssl@1.1//include/openssl/crypto.h \
+  /usr/local/opt/openssl@1.1//include/openssl/safestack.h \
+  /usr/local/opt/openssl@1.1//include/openssl/stack.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ossl_typ.h \
+  /usr/local/opt/openssl@1.1//include/openssl/cryptoerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/symhacks.h \
+  /usr/local/opt/openssl@1.1//include/openssl/comperr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bio.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bioerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509.h \
+  /usr/local/opt/openssl@1.1//include/openssl/buffer.h \
+  /usr/local/opt/openssl@1.1//include/openssl/buffererr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/evp.h \
+  /usr/local/opt/openssl@1.1//include/openssl/evperr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/objects.h \
+  /usr/local/opt/openssl@1.1//include/openssl/obj_mac.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asn1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asn1err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bn.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bnerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/objectserr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ec.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ecerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/rsa.h \
+  /usr/local/opt/openssl@1.1//include/openssl/rsaerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dsa.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dh.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dherr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dsaerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/sha.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509_vfy.h \
+  /usr/local/opt/openssl@1.1//include/openssl/lhash.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pkcs7.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pkcs7err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pem.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pemerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/hmac.h \
+  /usr/local/opt/openssl@1.1//include/openssl/async.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asyncerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ct.h \
+  /usr/local/opt/openssl@1.1//include/openssl/cterr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/sslerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl2.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl3.h \
+  /usr/local/opt/openssl@1.1//include/openssl/tls1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dtls1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/srtp.h util.h sockaddr_u.h \
+  sys_wrap.h ncat_connect.h ncat_core.h ncat_exec.h ncat_listen.h \
+  ncat_proxy.h ncat_ssl.h \
+  /usr/local/opt/openssl@1.1//include/openssl/err.h
+ncat_connect.o: ncat_connect.c base64.h ../nsock/include/nsock.h \
+  ../nsock/include/nsock_config.h ncat.h ncat_config.h config.h \
+  ../nbase/nbase.h ../nbase/nbase_config.h ../nbase/getopt.h \
+  ../nbase/nbase_ipv6.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl.h \
+  /usr/local/opt/openssl@1.1//include/openssl/e_os2.h \
+  /usr/local/opt/openssl@1.1//include/openssl/opensslconf.h \
+  /usr/local/opt/openssl@1.1//include/openssl/opensslv.h \
+  /usr/local/opt/openssl@1.1//include/openssl/comp.h \
+  /usr/local/opt/openssl@1.1//include/openssl/crypto.h \
+  /usr/local/opt/openssl@1.1//include/openssl/safestack.h \
+  /usr/local/opt/openssl@1.1//include/openssl/stack.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ossl_typ.h \
+  /usr/local/opt/openssl@1.1//include/openssl/cryptoerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/symhacks.h \
+  /usr/local/opt/openssl@1.1//include/openssl/comperr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bio.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bioerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509.h \
+  /usr/local/opt/openssl@1.1//include/openssl/buffer.h \
+  /usr/local/opt/openssl@1.1//include/openssl/buffererr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/evp.h \
+  /usr/local/opt/openssl@1.1//include/openssl/evperr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/objects.h \
+  /usr/local/opt/openssl@1.1//include/openssl/obj_mac.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asn1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asn1err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bn.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bnerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/objectserr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ec.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ecerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/rsa.h \
+  /usr/local/opt/openssl@1.1//include/openssl/rsaerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dsa.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dh.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dherr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dsaerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/sha.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509_vfy.h \
+  /usr/local/opt/openssl@1.1//include/openssl/lhash.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pkcs7.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pkcs7err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pem.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pemerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/hmac.h \
+  /usr/local/opt/openssl@1.1//include/openssl/async.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asyncerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ct.h \
+  /usr/local/opt/openssl@1.1//include/openssl/cterr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/sslerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl2.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl3.h \
+  /usr/local/opt/openssl@1.1//include/openssl/tls1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dtls1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/srtp.h util.h sockaddr_u.h \
+  sys_wrap.h ncat_connect.h ncat_core.h ncat_exec.h ncat_listen.h \
+  ncat_proxy.h ncat_ssl.h \
+  /usr/local/opt/openssl@1.1//include/openssl/err.h http.h
+ncat_core.o: ncat_core.c ncat.h ncat_config.h config.h ../nbase/nbase.h \
+  ../nbase/nbase_config.h ../nbase/getopt.h ../nbase/nbase_ipv6.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl.h \
+  /usr/local/opt/openssl@1.1//include/openssl/e_os2.h \
+  /usr/local/opt/openssl@1.1//include/openssl/opensslconf.h \
+  /usr/local/opt/openssl@1.1//include/openssl/opensslv.h \
+  /usr/local/opt/openssl@1.1//include/openssl/comp.h \
+  /usr/local/opt/openssl@1.1//include/openssl/crypto.h \
+  /usr/local/opt/openssl@1.1//include/openssl/safestack.h \
+  /usr/local/opt/openssl@1.1//include/openssl/stack.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ossl_typ.h \
+  /usr/local/opt/openssl@1.1//include/openssl/cryptoerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/symhacks.h \
+  /usr/local/opt/openssl@1.1//include/openssl/comperr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bio.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bioerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509.h \
+  /usr/local/opt/openssl@1.1//include/openssl/buffer.h \
+  /usr/local/opt/openssl@1.1//include/openssl/buffererr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/evp.h \
+  /usr/local/opt/openssl@1.1//include/openssl/evperr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/objects.h \
+  /usr/local/opt/openssl@1.1//include/openssl/obj_mac.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asn1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asn1err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bn.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bnerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/objectserr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ec.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ecerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/rsa.h \
+  /usr/local/opt/openssl@1.1//include/openssl/rsaerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dsa.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dh.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dherr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dsaerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/sha.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509_vfy.h \
+  /usr/local/opt/openssl@1.1//include/openssl/lhash.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pkcs7.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pkcs7err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pem.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pemerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/hmac.h \
+  /usr/local/opt/openssl@1.1//include/openssl/async.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asyncerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ct.h \
+  /usr/local/opt/openssl@1.1//include/openssl/cterr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/sslerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl2.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl3.h \
+  /usr/local/opt/openssl@1.1//include/openssl/tls1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dtls1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/srtp.h \
+  ../nsock/include/nsock.h ../nsock/include/nsock_config.h util.h \
+  sockaddr_u.h sys_wrap.h ncat_connect.h ncat_core.h ncat_exec.h \
+  ncat_listen.h ncat_proxy.h ncat_ssl.h \
+  /usr/local/opt/openssl@1.1//include/openssl/err.h
+ncat_posix.o: ncat_posix.c ncat.h ncat_config.h config.h ../nbase/nbase.h \
+  ../nbase/nbase_config.h ../nbase/getopt.h ../nbase/nbase_ipv6.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl.h \
+  /usr/local/opt/openssl@1.1//include/openssl/e_os2.h \
+  /usr/local/opt/openssl@1.1//include/openssl/opensslconf.h \
+  /usr/local/opt/openssl@1.1//include/openssl/opensslv.h \
+  /usr/local/opt/openssl@1.1//include/openssl/comp.h \
+  /usr/local/opt/openssl@1.1//include/openssl/crypto.h \
+  /usr/local/opt/openssl@1.1//include/openssl/safestack.h \
+  /usr/local/opt/openssl@1.1//include/openssl/stack.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ossl_typ.h \
+  /usr/local/opt/openssl@1.1//include/openssl/cryptoerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/symhacks.h \
+  /usr/local/opt/openssl@1.1//include/openssl/comperr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bio.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bioerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509.h \
+  /usr/local/opt/openssl@1.1//include/openssl/buffer.h \
+  /usr/local/opt/openssl@1.1//include/openssl/buffererr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/evp.h \
+  /usr/local/opt/openssl@1.1//include/openssl/evperr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/objects.h \
+  /usr/local/opt/openssl@1.1//include/openssl/obj_mac.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asn1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asn1err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bn.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bnerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/objectserr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ec.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ecerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/rsa.h \
+  /usr/local/opt/openssl@1.1//include/openssl/rsaerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dsa.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dh.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dherr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dsaerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/sha.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509_vfy.h \
+  /usr/local/opt/openssl@1.1//include/openssl/lhash.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pkcs7.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pkcs7err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pem.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pemerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/hmac.h \
+  /usr/local/opt/openssl@1.1//include/openssl/async.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asyncerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ct.h \
+  /usr/local/opt/openssl@1.1//include/openssl/cterr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/sslerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl2.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl3.h \
+  /usr/local/opt/openssl@1.1//include/openssl/tls1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dtls1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/srtp.h \
+  ../nsock/include/nsock.h ../nsock/include/nsock_config.h util.h \
+  sockaddr_u.h sys_wrap.h ncat_connect.h ncat_core.h ncat_exec.h \
+  ncat_listen.h ncat_proxy.h ncat_ssl.h \
+  /usr/local/opt/openssl@1.1//include/openssl/err.h
+ncat_listen.o: ncat_listen.c ncat.h ncat_config.h config.h \
+  ../nbase/nbase.h ../nbase/nbase_config.h ../nbase/getopt.h \
+  ../nbase/nbase_ipv6.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl.h \
+  /usr/local/opt/openssl@1.1//include/openssl/e_os2.h \
+  /usr/local/opt/openssl@1.1//include/openssl/opensslconf.h \
+  /usr/local/opt/openssl@1.1//include/openssl/opensslv.h \
+  /usr/local/opt/openssl@1.1//include/openssl/comp.h \
+  /usr/local/opt/openssl@1.1//include/openssl/crypto.h \
+  /usr/local/opt/openssl@1.1//include/openssl/safestack.h \
+  /usr/local/opt/openssl@1.1//include/openssl/stack.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ossl_typ.h \
+  /usr/local/opt/openssl@1.1//include/openssl/cryptoerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/symhacks.h \
+  /usr/local/opt/openssl@1.1//include/openssl/comperr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bio.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bioerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509.h \
+  /usr/local/opt/openssl@1.1//include/openssl/buffer.h \
+  /usr/local/opt/openssl@1.1//include/openssl/buffererr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/evp.h \
+  /usr/local/opt/openssl@1.1//include/openssl/evperr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/objects.h \
+  /usr/local/opt/openssl@1.1//include/openssl/obj_mac.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asn1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asn1err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bn.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bnerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/objectserr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ec.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ecerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/rsa.h \
+  /usr/local/opt/openssl@1.1//include/openssl/rsaerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dsa.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dh.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dherr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dsaerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/sha.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509_vfy.h \
+  /usr/local/opt/openssl@1.1//include/openssl/lhash.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pkcs7.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pkcs7err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pem.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pemerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/hmac.h \
+  /usr/local/opt/openssl@1.1//include/openssl/async.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asyncerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ct.h \
+  /usr/local/opt/openssl@1.1//include/openssl/cterr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/sslerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl2.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl3.h \
+  /usr/local/opt/openssl@1.1//include/openssl/tls1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dtls1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/srtp.h \
+  ../nsock/include/nsock.h ../nsock/include/nsock_config.h util.h \
+  sockaddr_u.h sys_wrap.h ncat_connect.h ncat_core.h ncat_exec.h \
+  ncat_listen.h ncat_proxy.h ncat_ssl.h \
+  /usr/local/opt/openssl@1.1//include/openssl/err.h
+ncat_proxy.o: ncat_proxy.c base64.h http.h ncat_config.h config.h util.h \
+  ../nbase/nbase.h ../nbase/nbase_config.h ../nbase/getopt.h \
+  ../nbase/nbase_ipv6.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl.h \
+  /usr/local/opt/openssl@1.1//include/openssl/e_os2.h \
+  /usr/local/opt/openssl@1.1//include/openssl/opensslconf.h \
+  /usr/local/opt/openssl@1.1//include/openssl/opensslv.h \
+  /usr/local/opt/openssl@1.1//include/openssl/comp.h \
+  /usr/local/opt/openssl@1.1//include/openssl/crypto.h \
+  /usr/local/opt/openssl@1.1//include/openssl/safestack.h \
+  /usr/local/opt/openssl@1.1//include/openssl/stack.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ossl_typ.h \
+  /usr/local/opt/openssl@1.1//include/openssl/cryptoerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/symhacks.h \
+  /usr/local/opt/openssl@1.1//include/openssl/comperr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bio.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bioerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509.h \
+  /usr/local/opt/openssl@1.1//include/openssl/buffer.h \
+  /usr/local/opt/openssl@1.1//include/openssl/buffererr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/evp.h \
+  /usr/local/opt/openssl@1.1//include/openssl/evperr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/objects.h \
+  /usr/local/opt/openssl@1.1//include/openssl/obj_mac.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asn1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asn1err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bn.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bnerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/objectserr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ec.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ecerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/rsa.h \
+  /usr/local/opt/openssl@1.1//include/openssl/rsaerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dsa.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dh.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dherr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dsaerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/sha.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509_vfy.h \
+  /usr/local/opt/openssl@1.1//include/openssl/lhash.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pkcs7.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pkcs7err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pem.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pemerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/hmac.h \
+  /usr/local/opt/openssl@1.1//include/openssl/async.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asyncerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ct.h \
+  /usr/local/opt/openssl@1.1//include/openssl/cterr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/sslerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl2.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl3.h \
+  /usr/local/opt/openssl@1.1//include/openssl/tls1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dtls1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/srtp.h sockaddr_u.h \
+  ../nsock/include/nsock.h ../nsock/include/nsock_config.h ncat.h \
+  sys_wrap.h ncat_connect.h ncat_core.h ncat_exec.h ncat_listen.h \
+  ncat_proxy.h ncat_ssl.h \
+  /usr/local/opt/openssl@1.1//include/openssl/err.h
+ncat_ssl.o: ncat_ssl.c ../nbase/nbase.h ../nbase/nbase_config.h \
+  ../nbase/getopt.h ../nbase/nbase_ipv6.h ncat_config.h config.h \
+  ../nsock/include/nsock.h ../nsock/include/nsock_config.h ncat.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl.h \
+  /usr/local/opt/openssl@1.1//include/openssl/e_os2.h \
+  /usr/local/opt/openssl@1.1//include/openssl/opensslconf.h \
+  /usr/local/opt/openssl@1.1//include/openssl/opensslv.h \
+  /usr/local/opt/openssl@1.1//include/openssl/comp.h \
+  /usr/local/opt/openssl@1.1//include/openssl/crypto.h \
+  /usr/local/opt/openssl@1.1//include/openssl/safestack.h \
+  /usr/local/opt/openssl@1.1//include/openssl/stack.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ossl_typ.h \
+  /usr/local/opt/openssl@1.1//include/openssl/cryptoerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/symhacks.h \
+  /usr/local/opt/openssl@1.1//include/openssl/comperr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bio.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bioerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509.h \
+  /usr/local/opt/openssl@1.1//include/openssl/buffer.h \
+  /usr/local/opt/openssl@1.1//include/openssl/buffererr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/evp.h \
+  /usr/local/opt/openssl@1.1//include/openssl/evperr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/objects.h \
+  /usr/local/opt/openssl@1.1//include/openssl/obj_mac.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asn1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asn1err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bn.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bnerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/objectserr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ec.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ecerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/rsa.h \
+  /usr/local/opt/openssl@1.1//include/openssl/rsaerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dsa.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dh.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dherr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dsaerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/sha.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509_vfy.h \
+  /usr/local/opt/openssl@1.1//include/openssl/lhash.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pkcs7.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pkcs7err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pem.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pemerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/hmac.h \
+  /usr/local/opt/openssl@1.1//include/openssl/async.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asyncerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ct.h \
+  /usr/local/opt/openssl@1.1//include/openssl/cterr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/sslerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl2.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl3.h \
+  /usr/local/opt/openssl@1.1//include/openssl/tls1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dtls1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/srtp.h util.h sockaddr_u.h \
+  sys_wrap.h ncat_connect.h ncat_core.h ncat_exec.h ncat_listen.h \
+  ncat_proxy.h ncat_ssl.h \
+  /usr/local/opt/openssl@1.1//include/openssl/err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/rand.h \
+  /usr/local/opt/openssl@1.1//include/openssl/randerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509v3.h \
+  /usr/local/opt/openssl@1.1//include/openssl/conf.h \
+  /usr/local/opt/openssl@1.1//include/openssl/conferr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509v3err.h
+base64.o: base64.c base64.h ../nbase/nbase.h ../nbase/nbase_config.h \
+  ../nbase/getopt.h ../nbase/nbase_ipv6.h
+http.o: http.c base64.h ncat.h ncat_config.h config.h ../nbase/nbase.h \
+  ../nbase/nbase_config.h ../nbase/getopt.h ../nbase/nbase_ipv6.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl.h \
+  /usr/local/opt/openssl@1.1//include/openssl/e_os2.h \
+  /usr/local/opt/openssl@1.1//include/openssl/opensslconf.h \
+  /usr/local/opt/openssl@1.1//include/openssl/opensslv.h \
+  /usr/local/opt/openssl@1.1//include/openssl/comp.h \
+  /usr/local/opt/openssl@1.1//include/openssl/crypto.h \
+  /usr/local/opt/openssl@1.1//include/openssl/safestack.h \
+  /usr/local/opt/openssl@1.1//include/openssl/stack.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ossl_typ.h \
+  /usr/local/opt/openssl@1.1//include/openssl/cryptoerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/symhacks.h \
+  /usr/local/opt/openssl@1.1//include/openssl/comperr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bio.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bioerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509.h \
+  /usr/local/opt/openssl@1.1//include/openssl/buffer.h \
+  /usr/local/opt/openssl@1.1//include/openssl/buffererr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/evp.h \
+  /usr/local/opt/openssl@1.1//include/openssl/evperr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/objects.h \
+  /usr/local/opt/openssl@1.1//include/openssl/obj_mac.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asn1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asn1err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bn.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bnerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/objectserr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ec.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ecerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/rsa.h \
+  /usr/local/opt/openssl@1.1//include/openssl/rsaerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dsa.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dh.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dherr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dsaerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/sha.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509_vfy.h \
+  /usr/local/opt/openssl@1.1//include/openssl/lhash.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pkcs7.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pkcs7err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pem.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pemerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/hmac.h \
+  /usr/local/opt/openssl@1.1//include/openssl/async.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asyncerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ct.h \
+  /usr/local/opt/openssl@1.1//include/openssl/cterr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/sslerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl2.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl3.h \
+  /usr/local/opt/openssl@1.1//include/openssl/tls1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dtls1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/srtp.h \
+  ../nsock/include/nsock.h ../nsock/include/nsock_config.h util.h \
+  sockaddr_u.h sys_wrap.h ncat_connect.h ncat_core.h ncat_exec.h \
+  ncat_listen.h ncat_proxy.h ncat_ssl.h \
+  /usr/local/opt/openssl@1.1//include/openssl/err.h http.h
+util.o: util.c sys_wrap.h ../nbase/nbase.h ../nbase/nbase_config.h \
+  ../nbase/getopt.h ../nbase/nbase_ipv6.h util.h ncat_config.h config.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl.h \
+  /usr/local/opt/openssl@1.1//include/openssl/e_os2.h \
+  /usr/local/opt/openssl@1.1//include/openssl/opensslconf.h \
+  /usr/local/opt/openssl@1.1//include/openssl/opensslv.h \
+  /usr/local/opt/openssl@1.1//include/openssl/comp.h \
+  /usr/local/opt/openssl@1.1//include/openssl/crypto.h \
+  /usr/local/opt/openssl@1.1//include/openssl/safestack.h \
+  /usr/local/opt/openssl@1.1//include/openssl/stack.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ossl_typ.h \
+  /usr/local/opt/openssl@1.1//include/openssl/cryptoerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/symhacks.h \
+  /usr/local/opt/openssl@1.1//include/openssl/comperr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bio.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bioerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509.h \
+  /usr/local/opt/openssl@1.1//include/openssl/buffer.h \
+  /usr/local/opt/openssl@1.1//include/openssl/buffererr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/evp.h \
+  /usr/local/opt/openssl@1.1//include/openssl/evperr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/objects.h \
+  /usr/local/opt/openssl@1.1//include/openssl/obj_mac.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asn1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asn1err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bn.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bnerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/objectserr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ec.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ecerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/rsa.h \
+  /usr/local/opt/openssl@1.1//include/openssl/rsaerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dsa.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dh.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dherr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dsaerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/sha.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509_vfy.h \
+  /usr/local/opt/openssl@1.1//include/openssl/lhash.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pkcs7.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pkcs7err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pem.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pemerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/hmac.h \
+  /usr/local/opt/openssl@1.1//include/openssl/async.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asyncerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ct.h \
+  /usr/local/opt/openssl@1.1//include/openssl/cterr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/sslerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl2.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl3.h \
+  /usr/local/opt/openssl@1.1//include/openssl/tls1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dtls1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/srtp.h sockaddr_u.h ncat.h \
+  ../nsock/include/nsock.h ../nsock/include/nsock_config.h \
+  ncat_connect.h ncat_core.h ncat_exec.h ncat_listen.h ncat_proxy.h \
+  ncat_ssl.h /usr/local/opt/openssl@1.1//include/openssl/err.h
+sys_wrap.o: sys_wrap.c sys_wrap.h ../nbase/nbase.h \
+  ../nbase/nbase_config.h ../nbase/getopt.h ../nbase/nbase_ipv6.h util.h \
+  ncat_config.h config.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl.h \
+  /usr/local/opt/openssl@1.1//include/openssl/e_os2.h \
+  /usr/local/opt/openssl@1.1//include/openssl/opensslconf.h \
+  /usr/local/opt/openssl@1.1//include/openssl/opensslv.h \
+  /usr/local/opt/openssl@1.1//include/openssl/comp.h \
+  /usr/local/opt/openssl@1.1//include/openssl/crypto.h \
+  /usr/local/opt/openssl@1.1//include/openssl/safestack.h \
+  /usr/local/opt/openssl@1.1//include/openssl/stack.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ossl_typ.h \
+  /usr/local/opt/openssl@1.1//include/openssl/cryptoerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/symhacks.h \
+  /usr/local/opt/openssl@1.1//include/openssl/comperr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bio.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bioerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509.h \
+  /usr/local/opt/openssl@1.1//include/openssl/buffer.h \
+  /usr/local/opt/openssl@1.1//include/openssl/buffererr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/evp.h \
+  /usr/local/opt/openssl@1.1//include/openssl/evperr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/objects.h \
+  /usr/local/opt/openssl@1.1//include/openssl/obj_mac.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asn1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asn1err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bn.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bnerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/objectserr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ec.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ecerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/rsa.h \
+  /usr/local/opt/openssl@1.1//include/openssl/rsaerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dsa.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dh.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dherr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dsaerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/sha.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509_vfy.h \
+  /usr/local/opt/openssl@1.1//include/openssl/lhash.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pkcs7.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pkcs7err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pem.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pemerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/hmac.h \
+  /usr/local/opt/openssl@1.1//include/openssl/async.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asyncerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ct.h \
+  /usr/local/opt/openssl@1.1//include/openssl/cterr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/sslerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl2.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl3.h \
+  /usr/local/opt/openssl@1.1//include/openssl/tls1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dtls1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/srtp.h sockaddr_u.h
+http_digest.o: http_digest.c ncat.h ncat_config.h config.h \
+  ../nbase/nbase.h ../nbase/nbase_config.h ../nbase/getopt.h \
+  ../nbase/nbase_ipv6.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl.h \
+  /usr/local/opt/openssl@1.1//include/openssl/e_os2.h \
+  /usr/local/opt/openssl@1.1//include/openssl/opensslconf.h \
+  /usr/local/opt/openssl@1.1//include/openssl/opensslv.h \
+  /usr/local/opt/openssl@1.1//include/openssl/comp.h \
+  /usr/local/opt/openssl@1.1//include/openssl/crypto.h \
+  /usr/local/opt/openssl@1.1//include/openssl/safestack.h \
+  /usr/local/opt/openssl@1.1//include/openssl/stack.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ossl_typ.h \
+  /usr/local/opt/openssl@1.1//include/openssl/cryptoerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/symhacks.h \
+  /usr/local/opt/openssl@1.1//include/openssl/comperr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bio.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bioerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509.h \
+  /usr/local/opt/openssl@1.1//include/openssl/buffer.h \
+  /usr/local/opt/openssl@1.1//include/openssl/buffererr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/evp.h \
+  /usr/local/opt/openssl@1.1//include/openssl/evperr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/objects.h \
+  /usr/local/opt/openssl@1.1//include/openssl/obj_mac.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asn1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asn1err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bn.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bnerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/objectserr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ec.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ecerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/rsa.h \
+  /usr/local/opt/openssl@1.1//include/openssl/rsaerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dsa.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dh.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dherr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dsaerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/sha.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509_vfy.h \
+  /usr/local/opt/openssl@1.1//include/openssl/lhash.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pkcs7.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pkcs7err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pem.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pemerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/hmac.h \
+  /usr/local/opt/openssl@1.1//include/openssl/async.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asyncerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ct.h \
+  /usr/local/opt/openssl@1.1//include/openssl/cterr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/sslerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl2.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl3.h \
+  /usr/local/opt/openssl@1.1//include/openssl/tls1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dtls1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/srtp.h \
+  ../nsock/include/nsock.h ../nsock/include/nsock_config.h util.h \
+  sockaddr_u.h sys_wrap.h ncat_connect.h ncat_core.h ncat_exec.h \
+  ncat_listen.h ncat_proxy.h ncat_ssl.h \
+  /usr/local/opt/openssl@1.1//include/openssl/err.h http.h \
+  /usr/local/opt/openssl@1.1//include/openssl/md5.h \
+  /usr/local/opt/openssl@1.1//include/openssl/rand.h \
+  /usr/local/opt/openssl@1.1//include/openssl/randerr.h
+ncat_lua.o: ncat_lua.c ncat.h ncat_config.h config.h ../nbase/nbase.h \
+  ../nbase/nbase_config.h ../nbase/getopt.h ../nbase/nbase_ipv6.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl.h \
+  /usr/local/opt/openssl@1.1//include/openssl/e_os2.h \
+  /usr/local/opt/openssl@1.1//include/openssl/opensslconf.h \
+  /usr/local/opt/openssl@1.1//include/openssl/opensslv.h \
+  /usr/local/opt/openssl@1.1//include/openssl/comp.h \
+  /usr/local/opt/openssl@1.1//include/openssl/crypto.h \
+  /usr/local/opt/openssl@1.1//include/openssl/safestack.h \
+  /usr/local/opt/openssl@1.1//include/openssl/stack.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ossl_typ.h \
+  /usr/local/opt/openssl@1.1//include/openssl/cryptoerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/symhacks.h \
+  /usr/local/opt/openssl@1.1//include/openssl/comperr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bio.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bioerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509.h \
+  /usr/local/opt/openssl@1.1//include/openssl/buffer.h \
+  /usr/local/opt/openssl@1.1//include/openssl/buffererr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/evp.h \
+  /usr/local/opt/openssl@1.1//include/openssl/evperr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/objects.h \
+  /usr/local/opt/openssl@1.1//include/openssl/obj_mac.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asn1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asn1err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bn.h \
+  /usr/local/opt/openssl@1.1//include/openssl/bnerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/objectserr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ec.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ecerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/rsa.h \
+  /usr/local/opt/openssl@1.1//include/openssl/rsaerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dsa.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dh.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dherr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dsaerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/sha.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/x509_vfy.h \
+  /usr/local/opt/openssl@1.1//include/openssl/lhash.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pkcs7.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pkcs7err.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pem.h \
+  /usr/local/opt/openssl@1.1//include/openssl/pemerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/hmac.h \
+  /usr/local/opt/openssl@1.1//include/openssl/async.h \
+  /usr/local/opt/openssl@1.1//include/openssl/asyncerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ct.h \
+  /usr/local/opt/openssl@1.1//include/openssl/cterr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/sslerr.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl2.h \
+  /usr/local/opt/openssl@1.1//include/openssl/ssl3.h \
+  /usr/local/opt/openssl@1.1//include/openssl/tls1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/dtls1.h \
+  /usr/local/opt/openssl@1.1//include/openssl/srtp.h \
+  ../nsock/include/nsock.h ../nsock/include/nsock_config.h util.h \
+  sockaddr_u.h sys_wrap.h ncat_connect.h ncat_core.h ncat_exec.h \
+  ncat_listen.h ncat_proxy.h ncat_ssl.h \
+  /usr/local/opt/openssl@1.1//include/openssl/err.h ncat_lua.h \
+  ../liblua/lua.h ../liblua/luaconf.h ../liblua/lauxlib.h \
+  ../liblua/lualib.h
